@@ -1,0 +1,22 @@
+여기에 유저에게 자동 업데이트할 게임 파일을 넣으세요.
+
+중요: 실제 게임 폴더 기준 상대경로를 그대로 유지합니다.
+
+예시 1) DarkEden.exe 업데이트
+launcher\patch\DarkEden.exe
+
+예시 2) Data\UI\UI.spk 업데이트
+launcher\patch\Data\UI\UI.spk
+
+예시 3) 여러 파일
+launcher\patch\Basics.dll
+launcher\patch\Data\UI\TitleBack.spk
+launcher\patch\Data\UI\RenewalTitle.spk
+
+넣은 뒤 GITHUB_UPDATE_TOOL\02_패치목록_생성.bat 를 실행하세요.
+그러면 files.cfg에 SHA-256과 파일 크기가 자동 기록됩니다.
+
+주의:
+- 하이네접속기.exe 자체는 이 패치 목록에 넣지 마세요.
+- hyine.cfg도 유저별 설정을 덮어쓸 수 있으므로 보통 패치하지 않는 것을 권장합니다.
+- GitHub 일반 저장소는 파일 하나당 100MB 제한이 있으므로 큰 파일은 별도 URL/GitHub Releases 사용을 권장합니다.
